@@ -14,10 +14,10 @@ with open('click/__init__.py', 'rb') as f:
 setup(
     name='click',
     author='Armin Ronacher',
-    author_email='armin.ronacher@active-4.com',
+    author_email='tdbaker@cs.washington.edu;armin.ronacher@active-4.com',
     version=version,
-    url='http://github.com/pallets/click',
-    packages=['click'],
+    url='http://github.com/uwescience/click',
+    packages=['click-uwescience'],
     description='A simple wrapper around optparse for '
                 'powerful command line utilities.',
     classifiers=[
