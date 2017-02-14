@@ -878,8 +878,7 @@ class Command(BaseCommand):
         parser = self.make_parser(ctx)
         opts, args, param_order = parser.parse_args(args=args)
 
-        for param in iter_params_for_processing(
-                param_order, self.get_params(ctx)):
+        for param in self.get_params(ctx):
             value, args = param.handle_parse_result(ctx, opts, args)
 
         if args and not ctx.allow_extra_args and not ctx.resilient_parsing:
