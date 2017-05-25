@@ -776,7 +776,7 @@ class Command(BaseCommand):
         rv = self.params
         help_option = self.get_help_option(ctx)
         if help_option is not None:
-            rv = rv + [help_option]
+            rv = [help_option] + rv
         return rv
 
     def format_usage(self, ctx, formatter):
