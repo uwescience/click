@@ -12,12 +12,12 @@ with open('click/__init__.py', 'rb') as f:
 
 
 setup(
-    name='click',
+    name='click-uwescience',
     author='Armin Ronacher',
     author_email='tdbaker@cs.washington.edu;armin.ronacher@active-4.com',
     version=version,
     url='http://github.com/uwescience/click',
-    packages=['click-uwescience'],
+    packages=['click'],
     description='A simple wrapper around optparse for '
                 'powerful command line utilities.',
     classifiers=[
